@@ -1,6 +1,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generatePage = require('./src/page-template.js');
+const allEmployees = [];
 
+// questions for user
 const questions = [
     {
         type: 'list',
@@ -122,6 +125,33 @@ const questions = [
     }
 ]
 
+// asks user questions
 const promptUser = () => {
-    
+
+    return inquirer.prompt(questions)
+    .then(userResponse => {
+
+        allEmployees.push(userResponse);
+
+        if (userResponse.addEmployee) {
+            return promptUser();
+        } else {
+            return allEmployees;
+        };
+    });
 };
+
+// writing the page in dist folder
+const writePage = (htmlContent) => {
+    fs.writeFile('./dist/index.html', htmlContent, err => {
+        if (err) {
+            throw err
+        };
+        console.log('Page successfully created!')
+    });
+};
+
+promptUser()
+    .then(data => generatePage(data))
+    .then(generatedHtml => writePage(generatedHtml))
+    .catch(err => console.log(err));

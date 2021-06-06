@@ -34,7 +34,7 @@ const questions = [
     {
         type: 'input',
         name: 'lastName',
-        message: ({ firstName }) => `What is ${formatName(firstName)}'s last name?`,
+        message: ({ firstName }) => `What is ${firstName}'s last name?`,
         validate: nameInput => {
             if (nameInput) {
                 return true;
@@ -47,7 +47,7 @@ const questions = [
     {
         type: 'input',
         name: 'id',
-        message: ({ firstName }) => `What is ${formatName(firstName)}'s ID number?`,
+        message: ({ firstName }) => `What is ${firstName}'s ID number?`,
         validate: idInput => {
             if (!isNaN(parseInt(idInput))) {
                 return true;
@@ -60,7 +60,7 @@ const questions = [
     {
         type: 'input',
         name: 'officeNumber',
-        message:  ({ firstName }) => `What is ${formatName(firstName)}'s office number?`,
+        message:  ({ firstName }) => `What is ${firstName}'s office number?`,
         when: ({ role }) => {
             if (role === 'Manager') {
                 return true;
@@ -80,7 +80,7 @@ const questions = [
     {
         type: 'input',
         name: 'github',
-        message: ({ firstName }) => `What is ${formatName(firstName)}'s GitHub userame?`,
+        message: ({ firstName }) => `What is ${firstName}'s GitHub userame?`,
         when: ({ role }) => {
             if (role === 'Engineer') {
                 return true;
@@ -100,7 +100,7 @@ const questions = [
     {
         type: 'input',
         name: 'school',
-        message: ({ firstName }) => `What school does ${formatName(firstName)} go to?`,
+        message: ({ firstName }) => `What school does ${firstName} go to?`,
         when: ({ role }) => {
             if (role === 'Intern') {
                 return true;

@@ -37,9 +37,6 @@ const addEmployee = employeeInfo => {
     <div class="card">
         <div class="card-content">
             <div class="media">
-                <div class="media-left">
-                    ${newEmployee.getIcon()}
-                </div>
                 <div class="media-content">
                     <p class="title is-4">${newEmployee.getName()}</p>
                     <p class="subtitle is-6">${newEmployee.getRole()}</p>
@@ -58,7 +55,7 @@ const addEmployee = employeeInfo => {
     return allCards;
 };
 
-const generatePage = htmlTemplate => {
+const generatePage = templateData => {
     return `
     <!DOCTYPE html>
     <html lang="en">

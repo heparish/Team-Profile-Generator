@@ -26,11 +26,11 @@ After cloning the repo to your computer and installing the required npm packages
 A video demonstration of the application can be found on [YouTube](https://youtu.be/3djFb__dOS4).
 
 ### Screenshots
-![App Screenshot](./assets/images/app-screenshot.png)
+![App Screenshot](https://github.com/heparish/Team-Profile-Generator/blob/main/assets/app-screenshot.png)
 The application runs from the command line as seen above.
 <br/><br/>
 ![Page Screenshot](./assets/images/generated-page-screenshot.png)
-An example of the generated team roster page.
+An example of the generated team page.
 
 ## Tests
 To run the tests on the application, install

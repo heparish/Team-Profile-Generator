@@ -13,3 +13,7 @@ test('creates an engineer object', () => {
 test('gets engineer\'s name', () => {
     (engineer.getName(), `${engineer.firstName} ${engineer.lastName}`);
 });
+
+test('gets engineer\'s github', () => {
+    (engineer.getGithub(), engineer.github);
+});

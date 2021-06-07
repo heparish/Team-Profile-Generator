@@ -1,7 +1,7 @@
 # Team Profile Generator
 
 ## Description
-A Node.js application to create a simple webpage to organzie your companies team.
+A Node.js application to create a simple webpage to organzie your company's team.
 
 ## Contents
 * [Installation](#Installation)
@@ -21,6 +21,9 @@ npm install inquirer
 
 ## Usage
 After cloning the repo to your computer and installing the required npm packages, use the integrated terminal, navigate into the folder and run `node index.js`.  Follow prompts to add team members. Only one manager can be added per team.  Upon completing all the prompts, a generated HTML file will appear in the `./dist` folder. 
+
+### Video Demo
+A video demonstration of the application can be found on [YouTube](https://youtu.be/3djFb__dOS4).
 
 ### Screenshots
 ![App Screenshot](./assets/images/app-screenshot.png)

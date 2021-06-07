@@ -29,7 +29,7 @@ A video demonstration of the application can be found on [YouTube](https://youtu
 ![App Screenshot](https://github.com/heparish/Team-Profile-Generator/blob/main/assets/app-screenshot.png)
 The application runs from the command line as seen above.
 <br/><br/>
-![Page Screenshot](./assets/images/generated-page-screenshot.png)
+![Page Screenshot](https://github.com/heparish/Team-Profile-Generator/blob/main/assets/generated-page-screenshot.png)
 An example of the generated team page.
 
 ## Tests
